@@ -1,0 +1,64 @@
+$colorGreen:#99e2d0;
+$colorWhiteGrey:#f6f6f6;
+$colorWhite:#fff;
+$colorGrey:#eaeaea;
+$colorPurple:#9356dc;
+$colorWhitePurple:#f5edff;
+$colorBlack:#000;
+$colorPink:#ff79dA;
+$colorShadow:#cecece;
+$degrade:linear-gradient(to right,#e872da,#e771db,#d36bda,#a95ddb);
+$font:Shrikhand,sans-serif;
+@mixin box-shadow($px)
+{
+	box-shadow: 0 $px 5px #cecece;
+}
+%bouton
+{
+	background: $degrade;
+	color: white;
+    border-radius: 2.5rem 2.5rem 2.5rem 2.5rem;
+	height: 5rem;
+	border: unset;
+	font-size: 17px;
+	font-weight: 600;
+	font-family: inherit;
+	cursor: pointer;
+	margin:20px;
+	padding:15px;
+	@include box-shadow(3px);
+	margin-bottom: 5rem;
+	text-decoration: unset;
+}
+%column
+{
+	display:flex;
+	flex-direction:column;
+}
+%center
+{
+	display:flex;
+	align-items:center;
+}
+%center1
+{
+	display:flex;
+	align-items:center;
+	justify-content: center;
+}
+%box
+{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+}
+
+@import 'global';
+@import 'header';
+@import 'main';
+@import 'footer';
+@import 'loader';
+@import 'query';
+
+
+

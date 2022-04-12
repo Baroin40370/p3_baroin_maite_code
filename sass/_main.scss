@@ -1,0 +1,385 @@
+
+.fonctionnement
+{
+   ul
+   {    
+	   	@extend %box;
+		margin-bottom: 7rem;
+    }
+    li
+    {
+	    border: 1px solid $colorWhiteGrey;
+		@include box-shadow(3px);
+		width: 90%;
+		height: 7rem;
+		@extend %center;
+		border-radius: 1.5rem;
+		margin: 10px;
+		position: relative;
+		 &:hover
+		 {
+		 	background-color: $colorWhitePurple;
+	    	@include box-shadow(10px);
+		 }
+		 &:hover i
+		 {
+	        color:$colorPurple;
+		 }
+    }
+    .nombre
+    {
+	 	border-radius: 100%;
+		border: 1px solid $colorPurple;
+		width: 3rem;
+	    height: 3rem;
+	    background-color: $colorPurple;
+		color: $colorWhite;
+		@extend %center1;
+		position: absolute;
+		left: -13px;
+    }
+    a
+    {
+	 	text-decoration: none;
+	 	color: black;
+	 	font-weight: bold;
+    }
+    i
+    {
+	 	margin-left: 4rem;
+	 	width:20px;
+	 	margin-right: 4rem;
+	 	color: #7e7e7e;
+    }
+    h2
+    {
+	 	width: 100%;
+		padding: 20px;
+		margin-top: 2rem;
+    }
+}
+
+.restaurants
+{
+ 	background-color:$colorWhiteGrey;
+    padding: 2rem;
+    @extend %box;
+	padding-bottom: 5rem;
+	    h2
+	    {
+		 	width: 100%;
+		 	margin-top: 3rem;
+		 	margin-bottom: 1rem;
+	    }
+	    article
+	    {
+			width: 98%;
+			background-color: $colorWhite;
+			border-radius: 2rem;
+			margin-bottom: 10px;
+			margin-top: 20px;
+			@include box-shadow(3px);
+			position: relative;
+			@extend %column;
+			 &:hover
+			 {
+				@include box-shadow(10px);
+			 }
+		}
+		.img
+		{
+		 	width: 100%;
+		    height: 75%;
+		}
+	    .nouveau
+	    {
+		 	border: 1px solid $colorGreen;
+			color: #008766;
+			width: 25%;
+			height: 4rem;
+			@extend %center1;
+			background-color: $colorGreen;
+			border-radius: 3px;
+			top: 15px;
+			position: absolute;
+			right: 15px;
+	    }
+	    img
+	    {
+			width: 100%;
+			height: 20rem;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 2rem 2rem 0rem 0rem;
+	    }
+	    .coeur
+	    {
+			font-size: 25px;
+			position: absolute;
+			right: 10px;
+			background-color: $colorWhite;
+			cursor: pointer;
+		     &:active
+		     {
+		     	opacity: 0;
+			    -webkit-transition: all 0.3s ease-in;
+		     }
+	    }
+	    .plein
+	    {
+			font-size: 25px;
+			background: $degrade;
+			background-clip: border-box;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			cursor: pointer;
+	    }
+	    a
+	    {
+			text-decoration:none;
+	    }
+	    .description
+	    {
+			color: black;
+			padding: 10px;
+			@extend %column;
+		     h3
+		     {
+			     padding-bottom: 3px;
+			     display: flex;
+			     justify-content: space-between;
+		     }
+        
+        }  
+}
+
+#fond
+{
+	background-color: $colorWhiteGrey;
+}
+
+.menu
+{
+	position: relative;
+	z-index: 1;
+	    img
+	    {
+		 	width: 100%;
+			height: 33rem;
+			object-fit: cover;
+	    }
+	    h2
+	    {
+			position: absolute;
+			border: 1px solid $colorWhiteGrey;
+			border-radius: 4rem 4rem 0 0;
+			width: 100%;
+			bottom: 0px;
+			height: 8rem;
+			display: flex;
+			align-items: last baseline;
+			padding-left: 20px;
+			background-color: $colorWhiteGrey;
+			font-family: $font;
+			justify-content: space-between;
+			font-size: 30px;
+	    }
+	    .coeur1 
+	    {
+			position: absolute;
+			right: 20px;
+			bottom: 13px;
+			font-size: 28px;
+			background-color: $colorWhiteGrey;
+			z-index: 3;
+			cursor: pointer;
+			 &:active
+			 {
+				 opacity: 0;
+				 transition: all 0.3s ease-in;
+		 }
+	    }
+	    .coeur2 
+	    {
+			position: absolute;
+			right: 20px;
+			bottom: 13px;
+			font-size: 28px;
+			z-index: 2;
+			background: $degrade;
+			background-clip: border-box;
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			cursor: pointer;
+	    }
+}
+
+.carte
+{
+    @extend %column;
+    justify-content: center;
+	    article
+	    {
+			border: 0px solid $colorWhite;
+			background-color: $colorWhite;
+			border-radius: 1.5rem;
+		    margin: 15px;
+		    display: flex;
+		    justify-content: space-between;
+		    @include box-shadow(3px);
+		    White-space: nowrap;
+		    cursor: pointer;
+		    overflow: hidden;
+		     &:hover
+		     {
+                @include box-shadow(10px);
+		     }
+             &:hover .coche 
+		      {
+			  	margin-right: 0;	
+		      }
+		     &:hover .coche i
+		      {
+		      	transform: rotate(360deg);
+		      }
+	    }
+	    h3
+	    {
+			font-weight: inherit;
+			margin: 20px;
+			margin-top: 3rem;
+			padding-bottom: 10px;
+	    }
+	    .bordure
+	    {
+			display: block;
+			border-bottom: 3px solid $colorGreen;
+			width: 11%;
+	    }
+	    h4
+	    {
+			font-size: 20px;
+			padding:6px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+	    }
+	    p
+	    {
+			font-size: 16px;
+			padding: 6px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+	    }
+	    .plats
+	    {
+			@extend %column;
+			padding: 7px;
+			overflow: hidden;
+	    }
+	    .prix
+	    {
+			display: flex;
+			align-items: end;
+			font-weight: bold;
+			 p 
+			 {
+				 padding-bottom: 13px;
+				 padding-right: 15px;
+			 }
+	    }
+	    .coche
+	    {
+			border: 1px solid $colorGreen;
+			border-radius: 0rem 1.5rem 1.5rem 0rem;
+			@extend %center1;
+			width: 8rem;
+			height: 8rem;
+			margin-right: -8rem;
+			margin-left: 20px;
+			background-color: $colorGreen;
+			transition: margin-right 2s;
+	    }
+	    i
+	    {
+			border-radius: 100%;
+			color: $colorGreen;
+			border: 2px solid $colorGreen;
+			width: 3rem;
+			height: 3rem;
+			@extend %center1;
+			background-color: $colorWhite;
+			transform: rotate(0);
+			transition: transform 2s;
+	    }
+	    .bouton 
+	    {
+			width: 100%;
+			@extend %center1;
+			margin-top: 20px;
+	    }
+	    button
+	    {
+			width:50%;
+			@extend %bouton;
+			 &:hover
+		      {
+			  	@include box-shadow(10px);
+		      }
+	    }
+}
+
+.animation 
+{
+	animation:slidebottom 1.5s 1s;
+	animation-fill-mode: backwards;
+}
+
+.animation1
+{
+	animation:slidebottom 2s 1s;
+	animation-fill-mode: backwards;
+}
+
+.animation2
+{
+	animation:slidebottom 2.5s 1s;
+	animation-fill-mode: backwards;
+}
+
+.animation3
+{
+	animation:slidebottom 3s 1s;
+	animation-fill-mode: backwards;
+}
+
+@keyframes slidebottom  {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+ 50%{
+      transform: translateY(5px);
+      opacity: 0;
+  }
+
+ 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

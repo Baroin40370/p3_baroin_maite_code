@@ -1,0 +1,39 @@
+footer
+{
+	@extend %column;
+	background-color: #353535;
+	padding: 2rem;
+	color: white;
+	  a
+	  {
+		text-decoration: none;
+		color:white;
+	  } 
+	  h3
+	  {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	  }
+
+	  ul
+	  {
+		list-style-type: none;
+	  }
+
+	  li
+	  {
+		padding: 8px;
+	  }
+
+	 .main
+	 { 
+	  i
+	  {
+		font-size: 11px;
+	  }
+	 }
+	 i 
+	 {
+		padding-right: 10px;
+	 }
+	}

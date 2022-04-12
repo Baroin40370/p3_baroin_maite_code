@@ -1,0 +1,179 @@
+@media (min-width: 768px)
+/*version tablette et desktop*/
+{ 
+   form
+   { 
+      button
+      {
+   	   width: 84%;
+   		font-size: 20px;
+   		height: 6rem;
+      }
+   }
+   
+   .fonctionnement 
+   {
+      h2
+      {
+      	font-size: 25px;
+      	display: flex;
+   		justify-content: center;
+   		padding-bottom: 3rem;
+      }
+      ul
+      {
+   		flex-flow: row;
+      }
+      li
+      {
+   		font-size: 20px;
+   		justify-content: center;
+   		height: 8rem;
+   		margin: 3rem;
+      }
+      .nombre
+      {
+   		width: 4rem;
+   		height: 4rem;
+      }
+      i
+      {
+      	padding-left: 15px;
+   		margin-left: unset;
+      }
+   }
+
+   .restaurants
+   {
+   	    flex-flow: row wrap;
+   	    justify-content: center;
+      h2
+      {
+      	display: flex;
+      	justify-content: center;
+      	font-size: 25px;
+      	padding-bottom: 2rem;
+      }
+      article
+      {
+   		margin: 2rem;
+   		width: 40%
+      }
+      .coeur
+      {
+         &:hover
+          {
+      		  opacity: 0;
+   		     -webkit-transition: all 0.3s ease-in;
+          }
+      }
+   }       
+   
+   header
+   {
+      .navigation
+      {
+	     justify-content: center;
+        position:relative;
+         a
+         {
+            width: auto;
+         }
+         .fleche
+         {
+            position:absolute;
+            left:20px;
+         }  
+      } 
+      
+   }
+   
+
+   .menu 
+   {
+   	h2
+      {   
+           padding-left: 3rem;
+      }	
+      img
+      {
+         height:45rem;
+      }
+      .description 
+      {  
+         i
+         {
+           font-size: 35px;
+           padding-right: 3rem;
+         }
+   		
+      }
+      .coeur1:hover
+      {
+         &:hover
+         {
+            opacity: 0;
+            transition: all 0.3s ease-in;
+         }
+	   }
+   }
+
+   .carte 
+   {
+   	flex-flow: row wrap;
+		justify-content: unset;
+		margin: 2rem;
+		margin-bottom: unset;
+        article
+        {
+            width: 30%;
+        }
+        h3
+        {
+            width: 100%;
+        }
+        .bordure
+        {
+            width:4%;
+        }
+        .bouton
+        {
+           button
+           {
+               width:20%;
+               font-size: 20px;
+           }
+         }  
+   }     
+
+   footer
+   {
+      h3
+      {
+   		width: 100%;
+         justify-content: center;
+		   display: flex;
+		   padding-bottom: 2rem;
+		   font-size: 25px;
+      }
+      ul
+      {
+         display: flex;
+         flex-flow: row;
+         justify-content: space-evenly; 
+      }
+      li
+      {
+            display: flex;
+            font-size: 20px; 
+      }
+      .main
+      {
+         i
+         {
+            font-size: 20px;
+         }            
+      }
+   }   
+}   
+      

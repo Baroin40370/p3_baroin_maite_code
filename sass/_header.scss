@@ -1,0 +1,132 @@
+header
+{
+ 	@extend %box;
+	justify-content: center;
+	width: 100%;
+		.ohmyfood
+	    {
+			font-family: $font;
+	    }
+	    a
+	    {
+			text-decoration: none;
+		    color: black;
+	    }
+	    h1
+	    {
+	 		margin:10px;
+	    }
+	    form
+	    {
+		 	@extend %box;
+			background-color: $colorWhiteGrey;
+			width: 100%;
+			margin-bottom: 10px;
+	    }
+	    input
+	    {
+			border:none;
+			font-family: inherit;
+		    background-color: $colorGrey;
+		    font-size: 18px;
+		    padding-left: 20px;
+		    font-weight: 600;
+	    }
+	    label
+	    {
+			position: absolute;
+			left:-999px;
+	    }
+	    .localisation 
+	    {
+		 	background-color: $colorGrey;
+			border: 1px solid $colorGrey;
+			width: 100%;
+			@extend %center1;
+			box-shadow: 1px -2px #cecece;
+			font-size: 16px;
+			height: 5rem;
+			margin-bottom: 10px;
+			i
+		     {
+			 	font-size: 18px;
+			 	margin-left: 7rem;
+		     }
+	   }
+	    .suite
+	    {
+		 	@extend %box;
+			padding: 10px 20px;
+	    }
+	    .bold
+	    {
+		 	font-size: 25px;
+			font-weight: bold;
+			padding-bottom: 3px;
+	    }
+	    .bold2
+	    {
+		 	font-size: 25px;
+			font-weight: bold;
+			padding-bottom: 10px;
+	    }
+	    .paragraphe
+	    {
+	 		font-size:20px;
+	    }
+	    .paragraphe1
+	    {
+		    margin-top: 5px;
+		    font-size: 20px;
+		    padding-bottom: 15px;
+	    }
+	    button
+	    {
+		 	@extend %bouton;
+				&:hover
+		      {
+			  	@include box-shadow(10px);
+		      }
+	    }
+	    .navigation
+	    {
+			@extend %center1;
+			background-color: $colorWhite;
+			flex-direction: row;
+			width: 100%;
+			position:relative;
+			 .fleche
+			 {
+			 	position:absolute;
+			 	left:15px;
+			 }
+			 a
+		     {
+			     text-decoration: none;
+			     color: $colorBlack;
+			     
+		     }
+		     h1
+		     {
+			 	font-size: 35px;
+		     }
+	    }
+	    .fleche
+	    {
+	      i
+	      {
+		      color: $colorBlack;
+			  font-size: 25px;
+			  
+	      }
+	    }
+}    
+
+
+
+
+
+ 
+
+
+ 
