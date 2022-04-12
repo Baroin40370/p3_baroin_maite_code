@@ -11,7 +11,7 @@ $degrade:linear-gradient(to right,#e872da,#e771db,#d36bda,#a95ddb);
 $font:Shrikhand,sans-serif;
 @mixin box-shadow($px)
 {
-	box-shadow: 0 $px 5px #cecece;
+	box-shadow: 0 $px 5px $colorShadow;
 }
 %bouton
 {
