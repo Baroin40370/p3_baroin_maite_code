@@ -84,17 +84,13 @@ header {
   header .bold {
     font-size: 25px;
     font-weight: bold;
-    padding-bottom: 3px; }
-  header .bold2 {
-    font-size: 25px;
-    font-weight: bold;
-    padding-bottom: 10px; }
+    padding-bottom: 3px;
+    text-align: center;
+    width: 260px; }
   header .paragraphe {
-    font-size: 20px; }
-  header .paragraphe1 {
-    margin-top: 5px;
     font-size: 20px;
-    padding-bottom: 15px; }
+    text-align: center;
+    width: 360px; }
   header button:hover {
     box-shadow: 0 10px 5px #cecece; }
   header .navigation {
@@ -306,10 +302,10 @@ header {
     overflow: hidden; }
   .carte .prix {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     font-weight: bold; }
     .carte .prix p {
-      padding-bottom: 13px;
+      padding-bottom: 19px;
       padding-right: 15px; }
   .carte .coche {
     border: 1px solid #99e2d0;
