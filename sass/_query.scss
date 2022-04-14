@@ -38,8 +38,8 @@
       }
       i
       {
-      	padding-left: 15px;
-   		margin-left: unset;
+      	padding-left: 4rem;
+   		  margin-left: unset;
       }
    }
 
@@ -108,14 +108,19 @@
          }
    		
       }
-      .coeur1:hover
+      .coeur1
       {
+        bottom:8px;
          &:hover
          {
             opacity: 0;
             transition: all 0.3s ease-in;
          }
 	   }
+     .coeur2
+     {
+       bottom:8px;
+     }
    }
 
    .carte 

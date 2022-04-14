@@ -174,11 +174,12 @@
 			border: 1px solid $colorWhiteGrey;
 			border-radius: 4rem 4rem 0 0;
 			width: 100%;
+			height:8rem;
 			bottom: 0px;
-			height: 8rem;
+			padding-top: 2rem;
 			display: flex;
-			align-items: last baseline;
-			padding-left: 20px;
+			align-items: center;
+			padding-left: 15px;
 			background-color: $colorWhiteGrey;
 			font-family: $font;
 			justify-content: space-between;
@@ -187,8 +188,8 @@
 	    .coeur1 
 	    {
 			position: absolute;
-			right: 20px;
-			bottom: 13px;
+			right: 15px;
+			bottom: 15px;
 			font-size: 28px;
 			background-color: $colorWhiteGrey;
 			z-index: 3;
@@ -202,8 +203,8 @@
 	    .coeur2 
 	    {
 			position: absolute;
-			right: 20px;
-			bottom: 13px;
+			right: 15px;
+			bottom: 15px;
 			font-size: 28px;
 			z-index: 2;
 			background: $degrade;
@@ -273,7 +274,7 @@
 	    .plats
 	    {
 			@extend %column;
-			padding: 7px;
+			padding: 0px 7px;
 			overflow: hidden;
 	    }
 	    .prix

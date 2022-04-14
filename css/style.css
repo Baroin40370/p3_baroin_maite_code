@@ -230,19 +230,20 @@ header {
     border: 1px solid #f6f6f6;
     border-radius: 4rem 4rem 0 0;
     width: 100%;
-    bottom: 0px;
     height: 8rem;
+    bottom: 0px;
+    padding-top: 2rem;
     display: flex;
-    align-items: last baseline;
-    padding-left: 20px;
+    align-items: center;
+    padding-left: 15px;
     background-color: #f6f6f6;
     font-family: Shrikhand, sans-serif;
     justify-content: space-between;
     font-size: 30px; }
   .menu .coeur1 {
     position: absolute;
-    right: 20px;
-    bottom: 13px;
+    right: 15px;
+    bottom: 15px;
     font-size: 28px;
     background-color: #f6f6f6;
     z-index: 3;
@@ -252,8 +253,8 @@ header {
       transition: all 0.3s ease-in; }
   .menu .coeur2 {
     position: absolute;
-    right: 20px;
-    bottom: 13px;
+    right: 15px;
+    bottom: 15px;
     font-size: 28px;
     z-index: 2;
     background: linear-gradient(to right, #e872da, #e771db, #d36bda, #a95ddb);
@@ -301,7 +302,7 @@ header {
     overflow: hidden;
     text-overflow: ellipsis; }
   .carte .plats {
-    padding: 7px;
+    padding: 0px 7px;
     overflow: hidden; }
   .carte .prix {
     display: flex;
@@ -450,7 +451,7 @@ footer {
     width: 4rem;
     height: 4rem; }
   .fonctionnement i {
-    padding-left: 15px;
+    padding-left: 4rem;
     margin-left: unset; }
 
   .restaurants {
@@ -484,9 +485,13 @@ footer {
   .menu .description i {
     font-size: 35px;
     padding-right: 3rem; }
-  .menu .coeur1:hover:hover {
-    opacity: 0;
-    transition: all 0.3s ease-in; }
+  .menu .coeur1 {
+    bottom: 8px; }
+    .menu .coeur1:hover {
+      opacity: 0;
+      transition: all 0.3s ease-in; }
+  .menu .coeur2 {
+    bottom: 8px; }
 
   .carte {
     flex-flow: row wrap;
